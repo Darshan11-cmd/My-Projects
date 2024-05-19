@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rentify - Buy, Sell, and Rent Properties</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
+	<script src="email.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Rentify</h1>
+		<nav>
+			<ul>
+				<li><a href="#buy">Buy</a></li>
+				<li><a href="#sell">Sell</a></li>
+				<li><a href="#rent">Rent</a></li>
+				<li><a href="#register">Register</a></li>
+				<li><a href="#login">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="buy">
+		<h2>Buy Properties</h2>
+		<ul id="property-list">
+			<li class="property-item">
+				<h3>Property 1</h3>
+				<p>Area: 100 sqm</p>
+				<p>Place: New York</p>
+				<p>Bedrooms: 2</p>
+				<button class="interested-btn">I'm Interested</button>
+			</li>
+			<li class="property-item">
+				<h3>Property 2</h3>
+				<p>Area: 150 sqm</p>
+				<p>Place: Los Angeles</p>
+				<p>Bedrooms: 3</p>
+				<button class="interested-btn">I'm Interested</button>
+			</li>
+			<li class="property-item">
+				<h3>Property 3</h3>
+				<p>Area: 200 sqm</p>
+				<p>Place: San Francisco</p>
+				<p>Bedrooms: 4</p>
+				<button class="interested-btn">I'm Interested</button>
+			</li>
+		</ul>
+		<div id="pagination">
+			<button id="prev-btn">Previous</button>
+			<button id="next-btn">Next</button>
+		</div>
+	</section>
+	<section id="sell">
+		<h2>Sell Properties</h2>
+		<form id="sell-form">
+			<label for="area">Area:</label><br>
+			<input type="text" id="area" name="area" required><br>
+			<label for="place">Place:</label><br>
+			<input type="text" id="place" name="place" required><br>
+			<label for="bedrooms">Bedrooms:</label><br>
+			<input type="number" id="bedrooms" name="bedrooms" min="1" required><br>
+			<label for="price">Price:</label><br>
+			<input type="number" id="price" name="price" min="1" required><br>
+			<input type="submit" value="Sell">
+		</form>
+	</section>
+	<section id="rent">
+		<h2>Rent Properties</h2>
+		<!-- Add property listings for rent here -->
+	</section>
+	<section id="register">
+		<h2>Register</h2>
+		<form id="register-form">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" required><br>
+			<label for="phone">Phone Number:</label><br>
+			<input type="tel" id="phone" name="phone" required><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email" required><br>
+			<label for="password">Password:</label><br>
+			<input type="password" id="password" name="password" required><br>
+			<label for="confirm_password">Confirm Password:</label><br>
+			<input type="password" id="confirm_password" name="confirm_password" required><br>
+			<input type="submit" value="Register">
+		</form>
+	</section>
+	<section id="login">
+		<h2>Login</h2>
+		<form id="login-form">
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email" required><br>
+			<label for="password">Password:</label><br>
+			<input type="password" id="password" name="password" required><br>
+			<input type="submit" value="Login">
+		</form>
+	</section>
+	<section id="properties">
+	<h2>My Properties</h2>
+		<ul id="property-list">
+			<!-- Add property listings here -->
+		</ul>
+		<button id="add-property-btn">Add Property</button>
+	</section>
+	<section id="interested">
+		<h2>I'm Interested</h2>
+		<form>
+		  <label for="buyer-email">Email:</label><br>
+		  <input type="email" id="buyer-email" name="buyer-email" required><br>
+		  <label for="buyer-name">Name:</label><br>
+		  <input type="text" id="buyer-name" name="buyer-name" required><br>
+		  <button class="interested-btn">I'm Interested</button>
+		</form>
+	  </section>
+	<footer>
+		<!-- Add contact information and copyright notice here -->
+	</footer>
+</body>
+</html>
